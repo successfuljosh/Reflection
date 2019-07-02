@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Reflections.Views.AddPostPage"
+             Title="Add Post">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" VerticalOptions="CenterAndExpand">
+                <Label Text="Add Reflection" FontSize="Large"
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Title" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="titleEntry" Placeholder="Enter title of post"
+                       Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="Type" Grid.Row="1" Grid.Column="0"/>
+                    <Picker x:Name="typePicker" Title="Select Post Type"
+                       Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Date" Grid.Row="2" Grid.Column="0"/>
+                    <DatePicker x:Name="datePicker"
+                       Grid.Row="2" Grid.Column="1"/>
+
+                    <Label Text="Post Content" Grid.Row="3" Grid.Column="0"/>
+                    <Editor x:Name="postContentEditor" Placeholder="Enter title of post"
+                       Grid.Row="3" Grid.Column="1"/>
+
+                    <Button x:Name="selectImageButton" Text="Select Post Image" Clicked="SelectImageButton_Clicked"
+                            Grid.Row="4" Grid.Column="0"/>
+                    <Image x:Name="postImage" 
+                       Grid.Row="4" Grid.Column="1"/>
+
+                    <Label Text="Author" Grid.Row="5" Grid.Column="0"/>
+                    <Entry x:Name="authorEntry" Placeholder="Enter author of post"
+                       Grid.Row="5" Grid.Column="1"/>
+
+                </Grid>
+                <Button x:Name="postButton" Text="Add Post" Clicked="PostButton_Clicked"
+                        BackgroundColor="Aqua"/>
+                <ActivityIndicator x:Name="loading" IsRunning="False"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

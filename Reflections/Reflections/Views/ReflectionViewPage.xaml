@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Reflections.Views.ReflectionViewPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Label x:Name="PostTitle" Text="Bold Title" FontAttributes="Bold" FontFamily="Arial" FontSize="Large"
+                HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="PostAuthorDate" Text="Author/Writer" FontSize="Small" FontAttributes="Italic" />
+
+                <Image x:Name="PostImage" WidthRequest="300" HeightRequest="200"/>
+
+                <Label Text="Main Content with images programmatically created based on the number of items on the Images Url List"
+                   x:Name="PostContent" FontSize="Medium"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

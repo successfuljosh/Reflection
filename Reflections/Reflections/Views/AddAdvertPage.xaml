@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Reflections.Views.AddAdvertPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" VerticalOptions="StartAndExpand">
+                <Label Text="Add Adverts" FontSize="Large"
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Text="Title" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="titleEntry" Placeholder="Enter title of Advert"
+                       Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="Advert Type" Grid.Row="1" Grid.Column="0"/>
+                    <Picker x:Name="adTypePicker" Title="Select Advert Type" SelectedIndexChanged="AdTypePicker_SelectedIndexChanged"
+                       Grid.Row="1" Grid.Column="1"/>
+                    
+                    <Label Text="File Type" Grid.Row="2" Grid.Column="0"/>
+                    <Picker x:Name="filePicker" Title="Select File Type" SelectedIndexChanged="FilePicker_SelectedIndexChanged"
+                       Grid.Row="2" Grid.Column="1"/>
+
+                    <Button x:Name="selectAdImageButton" Text="Select Advert Image" Clicked="SelectAdImageButton_Clicked" BorderColor="Navy" 
+                            BackgroundColor="White" BorderWidth="1"
+                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Image x:Name="adImage" HeightRequest="200" WidthRequest="200"
+                       Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                    <Button x:Name="selectAdVideoButton" Text="Select Advert Video" BorderColor="Navy" 
+                            BackgroundColor="White" BorderWidth="1" Clicked="SelectAdVideoButton_Clicked"
+                             Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Label x:Name="videoName" 
+                       Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+
+                </Grid>
+                 <ActivityIndicator x:Name="loading" IsRunning="False"/>   
+                
+                <Button x:Name="sendButton" Text="Post Advert" Clicked="SendButton_Clicked" CornerRadius="5" TextColor="White"
+                        BackgroundColor="Navy"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
