@@ -572,7 +572,6 @@ C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections.Android\obj\
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections.Android\obj\Debug\81\android\src\mono\com\google\ads\mediation\MediationInterstitialListenerImplementor.java
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections.Android\obj\Debug\81\android\src\md513d0258903c37fed2a3d17a14e8551a2\AwaitableResultCallback_1.java
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections.Android\obj\Debug\81\android\src\md513d0258903c37fed2a3d17a14e8551a2\ResultCallback_1.java
-C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections.Android\obj\Debug\81\android\src\com\google\android\gms\ads\impl\R.java
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections.Android\obj\Debug\81\android\src\com\google\android\gms\ads\R.java
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections.Android\obj\Debug\81\android\src\com\google\android\gms\R.java
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections.Android\obj\Debug\81\android\src\md5dab4f5c7853fd57f3a9c9a523364ac69\AwaitableTaskCompleteListener_1.java

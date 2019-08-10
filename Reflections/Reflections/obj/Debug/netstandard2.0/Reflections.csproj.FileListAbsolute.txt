@@ -19,3 +19,4 @@ C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections\obj\Debug\ne
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections\obj\Debug\netstandard2.0\Views\ReflectionListPage.xaml.g.cs
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections\obj\Debug\netstandard2.0\Views\ReflectionViewPage.xaml.g.cs
 C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Josh John\source\repos\Reflections\Reflections\Reflections\obj\Debug\netstandard2.0\Views\AddAdvertPage.xaml.g.cs
